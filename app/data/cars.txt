@@ -1,0 +1,6 @@
+1,Honda,Civic,2018,123456
+2,Honda,civic,2017,200000
+3,lexus,RX350,2019,1230047
+4,honda,civic,2017,1256
+5,lexus,RX350,2016,178956
+6,honda,Civic,2017,1237856

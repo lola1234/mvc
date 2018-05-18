@@ -1,0 +1,26 @@
+<?php include VIEW.'header.html';?>
+
+<a href="/car/index">View Cars</a>
+<a href="/car/edit">Edit Car</a>
+<a href="/car/delete">Delete car</a>
+
+<h1>Car Tables</h1>
+<?php
+	if(array_key_exists('cars',$this->viewData)){
+		$table = '<table border="1">';
+			foreach($this->viewData['cars'] as $car)
+			{
+				
+				$car_info = explode(',',$car);
+				$table .='<tr>';
+				foreach($car_info as $item)
+				{
+					$table .='<td>'.$item.'</td>';
+				}
+		  	$table .= '</tr>';
+			}
+		$table .= '</table>';
+		echo $table;
+  }
+?>
+<?php include VIEW.'footer.html';?>
